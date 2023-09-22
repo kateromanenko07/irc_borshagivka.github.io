@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en">
+    <![endif]-->
+<!--[if IE 7 ]>
+    <html class="ie ie7" lang="en">
+        <![endif]-->
+<!--[if IE 8 ]>
+        <html class="ie ie8" lang="en">
+            <![endif]-->
+<!--[if (gte IE 9)|!(IE)]>
+            <!-->
+<html lang="ru">
+    <!--
+                
+                <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EDI документи з «Вчасно EDI» — автоматизуйте обмін електронними документами</title>
+        <meta name="description" content="«Вчасно EDI» — це сервіс обміну стандартизованими електронними повідомленнями між замовником та постачальником.">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        <meta name="author" content="www.artartery.com.ua">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lt IE 9]>
+                                                    <script src="js/vendor/html5shiv.min.js"></script>
+                                                    <![endif]-->
+        <script src="js/vendor/jquery-2.1.3.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="site-container">
+            <header class="header">
+                <div class="header__links">
+                    <div class="container">
+                        <div class="header__links-wrap flex ai-center">
+                            <a href="javascript:;" class="header__link js--popup-consultation" data-id="1" onclick="dataid(this)">Пiдтримка</a>
+                            <a href="#" class="header__link">Увійти</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="container">
+                        <div class="header__inner flex jc-between ai-center">
+                            <div class="burger js--mobMenu">
+                                <span></span>
+                            </div>
+                            <a href="#" class="logo">
+                                <img src="img/logo.svg" alt="logo">
+                            </a>
+                            <nav class="menu">
+                                <ul class="menu__list flex gap20">
+                                    <li class="menu__list-item withsubmenu">
+                                        <a href="#" class="menu__list-link">Рішення</a>
+                                        <div class="menu__submenu submenu">
+                                            <div class="container">
+                                                <div class="menu__submenu-list flex">
+                                                    <div class="menu__submenu-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">EDI-рішення для постачальників</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Пошук мережі та GLN</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Інтеграція</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="menu__submenu-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">EDI-рішення для постачальників</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Пошук мережі та GLN</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Інтеграція</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a href="#" class="menu__list-link">Постачальникам</a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a href="#" class="menu__list-link">Інтеграція</a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a href="#" class="menu__list-link">Тарифи</a>
+                                    </li>
+                                    <li class="menu__list-item withsubmenu">
+                                        <a href="#" class="menu__list-link">Блог</a>
+                                        <div class="menu__submenu submenu">
+                                            <div class="container">
+                                                <div class="menu__submenu-list flex">
+                                                    <div class="menu__submenu-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">EDI-рішення для постачальників</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Пошук мережі та GLN</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Інтеграція</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__btns">
+                                <a href=" " class="btn btn-white">Відділ продажів</a>
+                                <a href=" " class="btn">Почати безкоштовно</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobmenu">
+                    <div class="mobmenu__wrap">
+                        <div class="mobmenu__inner">
+                            <ul class="mobmenu__list">
+                                <li class="mobmenu__list-item withsubmenu">
+                                    <a href="#" class="mobmenu__list-link">Рішення</a>
+                                    <div class="mobmenu__submenu submenu">
+                                        <div class="mobmenu__submenu-list">
+                                            <div class="mobmenu__submenu-item">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">EDI-рішення для постачальників</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пошук мережі та GLN</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Інтеграція</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="mobmenu__submenu-item">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">EDI-рішення для постачальників</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пошук мережі та GLN</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Інтеграція</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mobmenu__list-item">
+                                    <a href="#" class="mobmenu__list-link">Постачальникам</a>
+                                </li>
+                                <li class="mobmenu__list-item">
+                                    <a href="#" class="mobmenu__list-link">Інтеграція</a>
+                                </li>
+                                <li class="mobmenu__list-item">
+                                    <a href="#" class="mobmenu__list-link">Тарифи</a>
+                                </li>
+                                <li class="mobmenu__list-item withsubmenu">
+                                    <a href="#" class="mobmenu__list-link">Блог</a>
+                                    <div class="mobmenu__submenu submenu">
+                                        <div class="mobmenu__submenu-list">
+                                            <div class="mobmenu__submenu-item">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">EDI-рішення для постачальників</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пошук мережі та GLN</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Інтеграція</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="intro">
+                    <div class="container">
+                        <div class="intro__inner flex ai-center">
+                            <div class="intro__text">
+                                <h1 class="mb30">Платформа обміну <strong>EDI-документами</strong>
+                                </h1>
+                                <p class="fz16 gray">Розроблена спеціально для постачальників <br /> та торгових мереж України </p>
+                                <div class="flex gap10 mt40">
+                                    <a href="#" class="btn w200">Спробувати</a>
+                                    <a href="javascript:;" class="btn btn-white w200 js--popup-consultation" data-id='2' onclick="dataid(this)">Замовити консультацію</a>
+                                </div>
+                            </div>
+                            <div class="intro__img">
+                                <img src="img/intro.png" alt="Платформа обміну EDI-документами">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt180">
+                    <div class="container">
+                        <h2 class="maxw805 center">EDI документообіг - це ефективний інструмент для бізнесу в сфері рітейл</h2>
+                        <div class="grid grid-cols-4 gap20-50 mt65">
+                            <div class="item">
+                                <img src="img/icons-piggy.svg" alt="Економія часу та коштів">
+                                <h3 class="fz22 mt30">
+                                    Економія часу та <br />коштів
+                                </h3>
+                                <p>при використанні електронного документообігу</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/icons-watch.svg" alt="Збільшення швидкості отримання оплат">
+                                <h3 class="fz22 mt30">
+                                    Збільшення швидкості отримання оплат
+                                </h3>
+                                <p>від мереж за рахунок пришвидшення документообігу</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/icons-piggy.svg" alt="Автоматизація бізнес-процесів ">
+                                <h3 class="fz22 mt30">
+                                    Автоматизація бізнес-процесів
+                                </h3>
+                                <p>торгівлі з роздрібними мережами за міжнародними стандартами</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/icons-safe.svg" alt="Відсутність ризику ">
+                                <h3 class="fz22 mt30">
+                                    Відсутність <br />ризику
+                                </h3>
+                                <p>помилок ручного вводу та втрати документів</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt70">
+                    <div class="container">
+                        <div class="block-gray-sw-arrow">
+                            <div class="block-gray">
+                                <div class="block-gray-sw-arrow__text">
+                                    <h2 class="mb20">Оцініть переваги «Вчасно.EDI» – перші 300 документів безкоштовно!</h2>
+                                    <a href="#" class="btn btn-flash w280">Спробувати безкоштовно</a>
+                                </div>
+                                <div class="block-gray-sw-arrow__img">
+                                    <img src="img/img-sw-arrow-benefits.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="why-edi mt180">
+                    <div class="container">
+                        <h2 class="center">Чому обирають Вчасно.EDI</h2>
+                        <div class="grid grid-cols-4 gap30-120 mt85 plr50">
+                            <div class="item">
+                                <p>
+                                    <span class="bold900">
+                                        <span class="fz40">на</span>
+                                        <span class="fz64">90</span>
+                                        <span class="fz36">%</span>
+                                    </span>
+                                </p>
+                                <p class="gray">менше часу на обробку замовлень від мереж</p>
+                            </div>
+                            <div class="item">
+                                <p>
+                                    <span class="bold900">
+                                        <span class="fz64 plus">3000</span>
+                                    </span>
+                                </p>
+                                <p class="gray">компаній користується Вчасно.EDI</p>
+                            </div>
+                            <div class="item">
+                                <p>
+                                    <span class="bold900">
+                                        <span class="fz64">50к</span>
+                                    </span>
+                                </p>
+                                <p>дерев зберігаємо щороку</p>
+                            </div>
+                            <div class="item">
+                                <p>
+                                    <span class="bold900">
+                                        <span class="fz64">100</span>
+                                        <span class="fz36">%</span>
+                                    </span>
+                                </p>
+                                <p class="gray">український провайдер</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-4 gap30-120 mt80 plr50">
+                            <div class="item">
+                                <img src="img/icons-piggy.svg" alt="Найнижчі ціни в Україні на EDI-послуги">
+                                <p class="mt30 gray">Найнижчі ціни в Україні на EDI-послуги</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/icons-edi.svg" alt="Збільшення швидкості отримання оплат">
+                                <p class="mt30 gray">Екосистема сервісів <a href="#">Вчасно, Вчасно.Каса</a> та <a href="#">Вчасно.КЕП</a>
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="img/icons-protection.svg" alt="Гарантія безпеки комерційних даних">
+                                <p class="mt30 gray">Гарантія безпеки комерційних даних</p>
+                            </div>
+                            <div class="item">
+                                <img src="img/icons-setting.svg" alt="Зручні інтеграційні рішення (1С, BAS, ERP)">
+                                <p class="mt30 gray">Зручні інтеграційні рішення (1С, BAS, ERP)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="partners-logo mt180">
+                    <div class="container">
+                        <h2 class="center">З нами вже працюють</h2>
+                        <div class="logo__list flex flex-wrap jc-center">
+                            <a href="https://bi.ua/" class="logo__item" target="_blank">
+                                <img src="img/bi_logo.svg" alt="Будинок іграшок">
+                            </a>
+                            <a href="https://varus.ua/" class="logo__item" target="_blank">
+                                <img src="img/varus__logo.svg" alt="varus">
+                            </a>
+                            <a href="https://kyivkhlib.ua/" class="logo__item" target="_blank">
+                                <img src="img/KYIVKHLIB_logo.svg" alt="Київхліб">
+                            </a>
+                            <a href="https://kishenya.ua/" class="logo__item" target="_blank">
+                                <img src="img/velika-kishenya_logo.svg" alt="Велика Кишеня">
+                            </a>
+                            <a href="https://www.ctrs.com.ua/" class="logo__item" target="_blank">
+                                <img src="img/czitrus_logo.svg" alt="Цитрус">
+                            </a>
+                            <a href="https://33m2.com.ua/" class="logo__item" target="_blank">
+                                <img src="img/33m_logo.svg" alt="33 квадратных метра">
+                            </a>
+                            <a href="https://rozetka.com.ua/" class="logo__item" target="_blank">
+                                <img src="img/rozetka_logo.svg" alt="rozetka">
+                            </a>
+                            <a href="https://pampik.com/" class="logo__item" target="_blank">
+                                <img src="img/pampik_logo.svg" alt="pampik">
+                            </a>
+                            <a href="https://motto.ua/" class="logo__item" target="_blank">
+                                <img src="img/motto_logo.svg" alt="motto">
+                            </a>
+                            <a href="https://www.watsons.ua/" class="logo__item" target="_blank">
+                                <img src="img/watsons_logo.svg" alt="watsons">
+                            </a>
+                            <a href="https://www.eko.com.ua/" class="logo__item" target="_blank">
+                                <img src="img/eko_logo.svg" alt="eko">
+                            </a>
+                            <a href="https://goodwine.com.ua/" class="logo__item" target="_blank">
+                                <img src="img/goodwine_logo.svg" alt="goodwine">
+                            </a>
+                            <a href="https://www.okko.ua/" class="logo__item">
+                                <img src="img/okko_logo.svg" alt="okko">
+                            </a>
+                            <a href="http://rost.kharkov.ua/" class="logo__item" target="_blank">
+                                <img src="img/rost_logo.svg" alt="Супермаркет Рост">
+                            </a>
+                            <a href="https://tamtam.com.ua/" class="logo__item" target="_blank">
+                                <img src="img/tamtam__logo.svg" alt="Там Там">
+                            </a>
+                            <a href="https://eva.ua/" class="logo__item" target="_blank">
+                                <img src="img/eva_logo.svg" alt="eva">
+                            </a>
+                            <a href="https://www.foxtrot.com.ua/" class="logo__item" target="_blank">
+                                <img src="img/foxtrot_logo.svg" alt="Фокстрот">
+                            </a>
+                            <a href="https://rukavychka.ua/" class="logo__item" target="_blank">
+                                <img src="img/rukavychka_logo.svg" alt="Рукавичка">
+                            </a>
+                            <a href="https://dyvotsin.com.ua/" class="logo__item" target="_blank">
+                                <img src="img/divocin_logo.svg" alt="Дивоцін">
+                            </a>
+                        </div>
+                        <div class="ta-center mt30">
+                            <a href="#" class="btn btn-white w180">Знайти мережу</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="choose-format bg-lightblue ptb120">
+                    <div class="container">
+                        <h2>Оберіть зручний формат <br /> EDI-співпраці </h2>
+                        <div class="grid grid-cols-3 gap20 mt70">
+                            <a href="#" class="item r20 bg-white">
+                                <div class="item__inner">
+                                    <img src="img/icons-veb-interfejs.svg" alt="Веб-інтерфейс">
+                                    <h3 class="fz22 mt30 black">Веб-інтерфейс</h3>
+                                    <p class="gray mb30">Працюйте в браузері без установки додаткового програмного забезпечення</p>
+                                    <div class="mtauto">
+                                        <span class="arrow-r blue">Почати безкоштовно</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="item r20 bg-white">
+                                <div class="item__inner">
+                                    <img src="img/icons-1s-bas-moduli.svg" alt="1С, BAS модулі">
+                                    <h3 class="fz22 mt30 black">1С, BAS модулі</h3>
+                                    <p class="gray mb30">Отримуйте та обробляйте замовлення прямо в вашій обліковій системі</p>
+                                    <div class="mtauto">
+                                        <span class="arrow-r blue">Дізнатися більше</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="item r20 bg-white">
+                                <div class="item__inner">
+                                    <img src="img/icons-api-ftp.svg" alt="API, FTP">
+                                    <h3 class="fz22 mt30 black">API, FTP</h3>
+                                    <p class="gray mb30">інтегруйте EDI за допомогою протоколів API чи FTP</p>
+                                    <div class="mtauto">
+                                        <span class="arrow-r blue">Дізнатися більше</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="how-connect">
+                    <div class="container">
+                        <h2 class="center">Як підключитись до <br />«Вчасно.EDI» </h2>
+                        <div class="how-connect__list mt70 mb20">
+                            <div class="how-connect__item">
+                                <div class="how-connect__item-inner flex gap20">
+                                    <div class="how-connect__img">
+                                        <img src="img/how-connect1.svg" alt="Зареєструйтесь в особистому кабінеті">
+                                    </div>
+                                    <div class="how-connect__text">
+                                        <h3 class="fz22 mb20">Зареєструйтесь в особистому кабінеті</h3>
+                                        <p class="gray"> Функціонал «Вчасно.EDI» дуже простий й інтуїтивно зрозумілий, тому реєстрація та знайомство зазвичай проходить дуже швидко</p>
+                                        <a href="#" class="undrl">Зареєструватися</a>
+                                    </div>
+                                    <div class="how-connect__num">1</div>
+                                </div>
+                            </div>
+                            <div class="how-connect__item">
+                                <div class="how-connect__item-inner flex gap20">
+                                    <div class="how-connect__img">
+                                        <img src="img/how-connect2.svg" alt="Підключіть мережі, з якими будете працювати">
+                                    </div>
+                                    <div class="how-connect__text">
+                                        <h3 class="fz22 mb20">Підключіть мережі, з якими будете працювати</h3>
+                                        <p class="gray">Введіть контактні дані та список мереж для підключення, наш менеджер якнайшвидше зв'яжеться з вами для уточнення деталей та налаштування співпраці з мережею</p>
+                                        <a href="#" class="undrl">Підключити мережу</a>
+                                    </div>
+                                    <div class="how-connect__num">2</div>
+                                </div>
+                            </div>
+                            <div class="how-connect__item">
+                                <div class="how-connect__item-inner flex">
+                                    <div class="how-connect__img">
+                                        <img src="img/how-connect3.svg" alt="Отримуйте замовлення та починайте працювати">
+                                    </div>
+                                    <div class="how-connect__text">
+                                        <h3 class="fz22 mb20">Отримуйте замовлення та починайте працювати</h3>
+                                        <p class="gray">Після успішного підключення мережі, всі замовлення будуть відображені в особистому кабінеті. Починайте опрацювання замовлення одразу та пришвидшіть отримання оплат від мереж</p>
+                                        <a href="#" class="undrl"></a>
+                                    </div>
+                                    <div class="how-connect__num">3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ta-center">
+                            <h3 class="fz22">Насолоджуйтесь швидкою роботою <br /> з документами у «Вчасно.EDI» </h3>
+                            <a href="#" class="btn center w300 mt30">Обрати тариф</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="ask-question">
+                    <div class="container">
+                        <h2 class="center mt70">Залишилися запитання? Задайте його нам</h2>
+                    </div>
+                    <div class="ask-question__list flex">
+                        <div class="ask-question__item" style="background-color: #C1ECFF;">
+                            <div class="ask-question__item-inner flex gap20">
+                                <div class="ask-question__item-img">
+                                    <img src="img/ask-question1.svg" alt="Зв'яжіться з відділом продажів">
+                                </div>
+                                <div class="ask-question__item-text">
+                                    <h3 class="fz24 mb30">Зв'яжіться з відділом продажів</h3>
+                                    <p class="fz16">Наша команда з радістю допоможе знайти рішення саме для вашої компанії та підібрати оптимальний тариф.</p>
+                                    <a href="javascript:;" class="btn btn-white btn btn-white js--popup-consultation">Замовити консультацію</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ask-question__item" style="background-color: #B7ECD9;">
+                            <div class="ask-question__item-inner flex gap20">
+                                <div class="ask-question__item-img">
+                                    <img src="img/ask-question2.svg" alt="в'яжіться з нашою підтримкою">
+                                </div>
+                                <div class="ask-question__item-text">
+                                    <h3 class="fz24 mb30">Зв'яжіться з нашою підтримкою</h3>
+                                    <p class="fz16">Наші менеджери завжди раді допомогти з питань роботи сервісу, реєстрації та технічних налаштувань – звертайтеся!</p>
+                                    <a href="javascript:;" class="btn btn-white">Замовити консультацію</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__top">
+                    <div class="container">
+                        <div class="footer__top-inner">
+                            <div class="footer__menu flex gap20">
+                                <div class="footer__menu-item one">
+                                    <p>Зателефонуйте нам:</p>
+                                    <div class="tel__list">
+                                        <a href="tel:+380443920300">
+                                            <span class="tel-icon">
+                                                <img src="img/i-phone.svg" alt="">
+                                            </span>
+                                            <span>+38 044 392 03 00</span>
+                                        </a>
+                                        <a href="tel:+380674605333">
+                                            <span class="tel-icon">
+                                                <img src="img/i-kyivstar.svg" alt="">
+                                            </span>
+                                            <span>+38 067 460 5 333</span>
+                                        </a>
+                                        <a href="tel:+380674605333">
+                                            <span class="tel-icon">
+                                                <img src="img/i-mts.svg" alt="+38 050 416 5 333">
+                                            </span>
+                                            <span>+38 050 416 5 333</span>
+                                        </a>
+                                        <a href="tel:+380634605333">
+                                            <span class="tel-icon">
+                                                <img src="img/i-vodafone.svg" alt="+38 063 460 5 333">
+                                            </span>
+                                            <span>+38 063 460 5 333</span>
+                                        </a>
+                                        <p>(пн-пт 9:00 - 18:00)</p>
+                                    </div>
+                                </div>
+                                <div class="footer__menu-item two">
+                                    <ul>
+                                        <li class="li">
+                                            <a href="#">Про Вчасно.EDI</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#">Довідка</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#">Можливості</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#">Тарифи</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#">Акції</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#">Інтеграція</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer__menu-item three">
+                                    <ul>
+                                        <li class="li">
+                                            <a href="#">Правила користування сервісом</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#">Оферта Вчасно</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#">Ліцензійний договір</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="#">Політика конфіденційності</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer__menu-item four">
+                                    <p>Інші сервіси:</p>
+                                    <p>
+                                        <span class="purple bold">Вчасно ЕДО</span> – обмін електронними документами
+                                    </p>
+                                    <p>
+                                        <span class="pink bold">Вчасно.Каса</span> – програмний РРО для бізнесу
+                                    </p>
+                                    <p>
+                                        <span class="yellow bold">Вчасно.КЕП</span>– захищені електронні підписи та печатки
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mt30 flex gap20">
+                                <div class="footer__messengers w50">
+                                    <p>Напишіть нам:</p>
+                                    <div class="flex gap15">
+                                        <a href="#">
+                                            <img src="img/i-telegram.svg" alt="telegram">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/i-viber.svg" alt="viber">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="footer__social w50">
+                                    <p>Ми в соцмережах:</p>
+                                    <div class="flex gap15">
+                                        <a href="#">
+                                            <img src="img/i-facebook.svg" alt="facebook">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/i-insta.svg" alt="instagram">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/i-youtube.svg" alt="youtube">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/i-telegram.svg" alt="telegram">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/i-linkedIn.svg" alt="linkedIn">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="container">
+                        <div class="footer__bottom-inner flex ai-center jc-center">
+                            <a href="">
+                            <div class="ta-center">
+                                <img src="img/evo.svg" alt="evo" class="inline-block">
+                                <p>evo.company</p>
+                            </div>
+                            </a>
+                            <div class="developer">
+                                <a href="https://artartery.com.ua/" target="_blank" title="Розробка сайту - artARTERY">Розробка сайту - artARTERY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="section-popup">
+                <div class="popup popup-consultation">
+                    <form class="form form-popup form-consultation">
+                        <div class="form-data">
+                            <div class="fz24 bold500 mb30">Замовити консультацію щодо роботи з «Вчасно.EDI»</div>
+                            <div class="feedback-form__list flex flex-wrap">
+                                <input type="hidden" class="popup-dataid" id="landing_id" name="landing_id" value="">
+                                <div class="form__row">
+                                    <label for="">Номер телефону</label>
+                                    <input class="inputall fieldtel phonemask" type="tel" name="tel" placeholder="+380 000000000">
+                                </div>
+                                <div class="form__row">
+                                    <label for="">Email</label>
+                                    <input class="inputall fieldmail" name="mail" placeholder="Вкажіть свій Email*">
+                                </div>
+                                <div class="form__row">
+                                    <label for="">ПІБ</label>
+                                    <input class="inputall fieldname" placeholder="Ваше ім'я*" name="name">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-popup mt35 w100"> Замовити </button>
+                        </div>
+                        <div class="form-tnx">
+                            <div class="feedback__tnx-content ta-center">
+                                <p class="fz24 bold500">Дякуємо! <br /> Ми обовязково звяжемося <br /> з вами найближчим часом </p>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="btn-close-popup"></div>
+                </div>
+            </div>
+            <script src="js/vendor/inputmask.js"></script>
+            <script src="js/vendor/jquery.inputmask.js"></script>
+            <script src="js/vendor/jquery.mixitup.min.js"></script>
+            <script src="js/main.js"></script>
+
+            <script>
+
+
+            var config = {
+                fields: {
+                    "Name": "#name", // Ім'я відвідувача, що заповнив форму
+                    "Email": "#mail", // Email відвідувача
+                    "MobilePhone": "#tel", // Телефон відвідувача
+                },
+                contactFields: {
+                    "FullName": "#name", // Name of a contact
+                    "Phone": "#mail", // Contact's mobile phone
+                    "Email": "#tel" // Contact's email
+                },
+                landingId: "#landingId",
+                serviceUrl: "https://vchasno.terrasoft.ua/0/ServiceModel/GeneratedObjectWebFormService.svc/SaveWebFormObjectData",
+                redirectUrl: ""
+            };        
+
+            console.log(config.landingId);        
+
+            function dataid(obj){
+                var a = $(obj).data('id');
+                config.landingId = a;
+                console.log(config.landingId);
+            } 
+
+            </script>
+        </div>
+    </body>
+</html>
